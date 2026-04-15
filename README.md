@@ -79,4 +79,4 @@ Each map has its own unique color palette, environmental decorations, and a 1-mi
 
 ## 📄 License
 
-MIT License — see [LICENSE](LICENSE) for details.
+CC BY-NC 4.0 (Non-Commercial) — see [LICENSE](LICENSE) for details.
