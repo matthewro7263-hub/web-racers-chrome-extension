@@ -15,9 +15,23 @@ Fall Guys-style elimination tournament with 17 players across 4 rounds:
 - **Final** — First to finish 3 laps wins the cup!
 
 ### Open World
-Explore a seamlessly connected world map with 9 unique biome regions linked by highways. Collect coins, discover tracks, and drive freely.
+Explore a seamlessly connected world map with 9 unique biome regions linked by 9 highways. Collect coins along roads and around region centers, discover tracks, and drive freely. Entering a new region fades the screen and displays a region banner.
 
-## 🗺️ Maps
+## 🗺️ Regions
+
+| Region | Position | Biome |
+|--------|----------|-------|
+| City | 0, 0 | Urban |
+| Suburbs | −55000, 0 | Green |
+| Desert | 65000, 0 | Desert |
+| Coastal | 0, 65000 | Coastal |
+| Mountain | 65000, 50000 | Mountain |
+| Airport | 30000, −40000 | Desert |
+| Beach | 30000, 105000 | Coastal |
+| Forest | −55000, −55000 | Deep Forest |
+| Industrial | 65000, 105000 | Industrial |
+
+## 🏁 Maps
 
 | Map | Biome | Difficulty |
 |-----|-------|------------|
@@ -30,7 +44,7 @@ Explore a seamlessly connected world map with 9 unique biome regions linked by h
 | Technical Track | Neon | Expert |
 | Phoenix Sky Harbor | Desert | Expert |
 
-Each map has its own unique color palette, environmental decorations, and a 1-minute looping original soundtrack.
+Each map card in the browser shows **difficulty**, **length** (meters), **corner count**, and **biome** as colored stat chips.
 
 ## ✨ Features
 
@@ -39,11 +53,14 @@ Each map has its own unique color palette, environmental decorations, and a 1-mi
 - **Realistic physics** — Drift mechanics, barrier glide collisions, off-road slowdown, NOS boost
 - **Visual effects** — Tire skid marks, drift smoke, car shadows, day/night cycle
 - **Airport map** — Airplane flyover every lap with jet engine SFX and parked planes at gates
-- **Full HUD** — Speedometer, minimap, live leaderboard, lap counter, best lap timer, NOS bar
+- **Full HUD** — Speedometer (bottom-right), minimap (top-right), live leaderboard, lap counter, best lap timer, NOS bar
 - **Unique OST** — Every map has its own genre and BPM composed with Web Audio API oscillators
 - **Firebase multiplayer** — Real-time online racing
 - **Fall Guys-style loading screens** — Track preview + round objective before every race
-- **World drone view** — Full atlas view of all 9 regions with biome halos and stat chips
+- **World drone view** — Full atlas view of all 9 regions with biome halos, highway roads, and region name labels
+- **Maps browser** — Each map card shows difficulty, length, corners, and biome stat chips
+- **Seamless region transitions** — Fade overlay + "ENTERING AREA" banner when crossing region borders
+- **Logical highway network** — 9 highway corridors connect all regions; roads rendered with shoulders, lane markings, and dashed center lines
 
 ## 🛠️ Tech Stack
 
