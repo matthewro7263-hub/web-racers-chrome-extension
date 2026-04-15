@@ -1,6 +1,6 @@
 # 🏎️ Web Racers
 
-A browser-based 2D top-down racing game built with HTML5 Canvas and JavaScript. Features Firebase multiplayer, an open world with 9 connected regions, a Knockout Cup elimination mode, dynamic weather, and unique soundtracks for every map — all playable directly in the browser with no downloads required.
+A browser-based 2D top-down racing game built with HTML5 Canvas and JavaScript. Features Firebase multiplayer, an open world with 9 connected regions, a Knockout Cup elimination mode, dynamic weather, and unique soundtracks for every map.
 
 ## 🎮 Game Modes
 
@@ -53,17 +53,29 @@ Each map has its own unique color palette, environmental decorations, and a 1-mi
 - **Firebase** — Multiplayer and authentication
 - **Tone.js** — Synthesized instrument audio
 
-## 🚀 Getting Started
+## 🚀 Installing as a Chrome Extension
 
-1. Clone or download the repo
-2. Open `index.html` in any modern browser
-3. No server or install required — runs fully in-browser
+1. **Download or clone this repo**
+   ```bash
+   git clone https://github.com/matthewro7263-hub/web-racers-chrome-extension.git
+   ```
 
-```bash
-git clone https://github.com/matthewro7263-hub/web-racers-chrome-extension.git
-cd web-racers-chrome-extension
-open index.html
-```
+2. **Open Chrome Extensions**
+   - Go to `chrome://extensions` in your browser
+   - Or: Chrome menu → More Tools → Extensions
+
+3. **Enable Developer Mode**
+   - Toggle **Developer mode** on (top-right corner)
+
+4. **Load the extension**
+   - Click **Load unpacked**
+   - Select the cloned `web-racers-chrome-extension` folder
+
+5. **Launch the game**
+   - Click the Web Racers icon in your Chrome toolbar
+   - The game opens in a popup or new tab — ready to play!
+
+> **Note:** No build step or server required. The extension runs entirely in the browser using HTML5 Canvas and the Web Audio API.
 
 ## 📄 License
 
