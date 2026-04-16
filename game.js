@@ -8389,6 +8389,10 @@
                             handleRegionTransition(newRegion);
                         }
                     }
+                } else if (gameState === 'DRONE_VIEW') {
+                    updateDroneControls();
+                } else if (gameState === 'TRACK_EDITOR') {
+                    updateEditorControls();
                 } else if (player) {
                     let targetCar = player;
                     if (gameMode === 'LOCAL_MULTIPLAYER' && player2) {
@@ -8418,10 +8422,6 @@
                     } else {
                         cameraShakeX = 0; cameraShakeY = 0;
                     }
-                } else if (gameState === 'DRONE_VIEW') {
-                    updateDroneControls();
-                } else if (gameState === 'TRACK_EDITOR') {
-                    updateEditorControls();
                 }
 
                 if (gameState === 'PLAYING' || gameState === 'FINISHED') {
